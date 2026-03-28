@@ -139,11 +139,8 @@ latest = df.iloc[-1]
 # ------------------- EMAIL -------------------
 def send_email_alert(message):
     sender = "ashmitapaul436@gmail.com"
-    password = os.getenv("EMAIL_PASSWORD")
-    receiver = "aishmitapaul84@gmail.com"
-
-    if not password:
-        return
+    password = st.secrets("EMAIL_PASSWORD")
+    receiver = "aishmitapaul84@gmail.com
 
     msg = MIMEText(message)
     msg['Subject'] = "🚨 Waste Alert"
