@@ -13,6 +13,7 @@ from utils.config import CHANNEL_ID, READ_API_KEY
 from streamlit_autorefresh import st_autorefresh
 from dotenv import load_dotenv
 from utils.database import add_user, login_user
+import streamlit as st
 
 load_dotenv()
 
